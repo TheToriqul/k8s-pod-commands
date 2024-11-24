@@ -14,16 +14,31 @@ This repository documents my journey learning Kubernetes pod management, focusin
 The project demonstrates a fundamental Kubernetes setup focusing on pod-level operations:
 
 ```mermaid
-graph TD
-    A[kubectl CLI] -->|Commands| B[Kubernetes API Server]
-    B --> C[Pod Management]
-    C -->|Creates| D[nginx Pod]
-    D -->|Exposes| E[Port 80]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#ddf,stroke:#333,stroke-width:2px
-    style D fill:#bfb,stroke:#333,stroke-width:2px
-    style E fill:#fbb,stroke:#333,stroke-width:2px
+flowchart TD
+    A[Create and Execute Commands in a Kubernetes Pod] --> B[Task Overview]
+    B --> C[Create a Pod]
+    B --> D[Execute Commands Inside the Pod]
+    B --> E[Verify Command Execution]
+
+    C --> F[Choose Creation Method]
+    F --> G[Imperative Approach]
+    F --> H[Declarative Approach]
+
+    G --> I[Create Pod Directly]
+    H --> J[Define YAML Configuration]
+    J --> K[Apply YAML to Create Pod]
+
+    D --> L[Open Shell Inside Pod]
+    L --> M[Interact with the Pod]
+
+    E --> N[Verify Pod Status]
+    N --> O[Confirm Successful Execution]
+
+    style A fill:#e3f2fd,stroke:#2196f3,stroke-width:2px;
+    style B fill:#e8f5e9,stroke:#4caf50,stroke-width:2px;
+    style C fill:#ede7f6,stroke:#673ab7,stroke-width:2px;
+    style D fill:#fffde7,stroke:#ffeb3b,stroke-width:2px;
+    style E fill:#fbe9e7,stroke:#ff5722,stroke-width:2px;
 ```
 
 ## 💻 Technical Stack
