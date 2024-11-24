@@ -33,12 +33,6 @@ flowchart TD
 
     E --> N[Verify Pod Status]
     N --> O[Confirm Successful Execution]
-
-    style A fill:#e3f2fd,stroke:#2196f3,stroke-width:2px;
-    style B fill:#e8f5e9,stroke:#4caf50,stroke-width:2px;
-    style C fill:#ede7f6,stroke:#673ab7,stroke-width:2px;
-    style D fill:#fffde7,stroke:#ffeb3b,stroke-width:2px;
-    style E fill:#fbe9e7,stroke:#ff5722,stroke-width:2px;
 ```
 
 ## 💻 Technical Stack
